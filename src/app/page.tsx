@@ -1,6 +1,6 @@
 "use client";
 
-import { useAuth } from "@/context/AuthContext"; // Adjust the path as necessary
+// import { useAuth } from "@/context/AuthContext"; // Adjust the path as necessary
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 import { signOut } from "firebase/auth";
