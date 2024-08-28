@@ -19,9 +19,9 @@ export default function Home() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100 text-black">
       Home screen - {user?.email}
-      <button onClick={() => signOut(auth)} className="ml-4">
+      {/* <button onClick={() => signOut(auth)} className="ml-4">
         sign out
-      </button>
+      </button> */}
     </div>
   );
 }
