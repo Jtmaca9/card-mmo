@@ -11,21 +11,21 @@ export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = async (e: React.FormEvent) => {
-    e.preventDefault();
-    try {
-      await signIn(email, password);
-      await router.push("/");
-    } catch (err) {
-      console.error(err);
-    }
-  };
+  // const handleLogin = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   try {
+  //     await signIn(email, password);
+  //     await router.push("/");
+  //   } catch (err) {
+  //     console.error(err);
+  //   }
+  // };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 space-y-3 bg-white rounded-lg shadow-md">
         <h1 className="text-2xl font-bold text-center">Login</h1>
-        <form onSubmit={handleLogin} className="space-y-6">
+        <form onSubmit={() => {}} className="space-y-6">
           <div>
             <label
               htmlFor="email"
