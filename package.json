@@ -11,7 +11,7 @@
     "db:migrate:undo": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:down",
     "db:migrate:rollback": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:rollback",
     "db:migrate:make": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:make",
-    "vercel-build": "prisma generate && npx db:migrate && next build"
+    "vercel-build": "prisma generate && npm run db:migrate && next build"
   },
   "dependencies": {
     "@auth0/nextjs-auth0": "^3.5.0",
