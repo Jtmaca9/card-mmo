@@ -9,6 +9,7 @@
     "lint": "next lint",
     "db:migrate": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:latest",
     "db:migrate:undo": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:down",
+    "db:migrate:rollback": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:rollback",
     "db:migrate:make": "TS_NODE_COMPILER_OPTIONS='{ \"module\": \"commonjs\" }' knex migrate:make"
   },
   "dependencies": {
