@@ -1,7 +1,7 @@
 require("dotenv").config({ path: ".env.local" });
 const knex = require("knex")({
   client: "pg",
-  connection: process.env.DATABASE_URL,
+  connection: process.env.POSTGRES_PRISMA_URL,
 });
 
 async function dropTable() {
