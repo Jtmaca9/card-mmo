@@ -23,6 +23,8 @@ const Icon = React.memo(({ iconType }: { iconType: IconType }) => {
   }
 });
 
+Icon.displayName = "Icon";
+
 interface SidebarButtonProps {
   href: string;
   label: string;
